@@ -1,4 +1,2 @@
-pathfollow
+Infeasible Primal Dual Path-following Interior Point Method
 ==========
-
-Infeasible primal dual path-following interior point methods
