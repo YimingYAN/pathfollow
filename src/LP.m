@@ -18,9 +18,9 @@ classdef LP < handle
     
     %% Optimal solution related properties
     properties (SetAccess = private)
-        x;      % Current best approx. for primal optimal solution x*
-        y;      % Current best approx. for dual optimal solution y*
-        s;      % Current best approx. for dual optimal solution s*
+        optx;      % Current best approx. for primal optimal solution x*
+        opty;      % Current best approx. for dual optimal solution y*
+        opts;      % Current best approx. for dual optimal solution s*
     end
     
     methods
@@ -61,29 +61,35 @@ classdef LP < handle
         end
         
         %% Set functions
-        function lp = update_x(lp, x_new)
-           if size(x_new, 1) ~= lp.n
+        function lp = set_optx(lp, optx)
+           if size(optx, 1) ~= lp.n
                error('LP: cannot set x - check the dimension.');
            else
-               lp.x = x_new;
+               lp.optx = optx;
            end               
         end
         
-        function lp = update_y(lp, y_new)
-           if size(y_new, 1) ~= lp.m
+        function lp = set_opty(lp, opty)
+           if size(opty, 1) ~= lp.m
                error('LP: cannot set y - check the dimension.');
            else
-               lp.y = y_new;
+               lp.opty = opty;
            end               
         end
         
-        function lp = update_s(lp, s_new)
-           if size(s_new, 1) ~= lp.n
+        function lp = set_opts(lp, opts)
+           if size(opts, 1) ~= lp.n
                error('LP: cannot set s - check the dimension.');
            else
-               lp.s = s_new;
+               lp.opts = opts;
            end               
-        end        
+        end     
+        
+        %% get functions
+        function fval = getFval(lp)
+            % getFval - get optimal objective function value
+            fval = lp.c' * lp.optx;
+        end
     end
     
     

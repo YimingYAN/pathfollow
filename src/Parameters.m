@@ -5,7 +5,7 @@ classdef Parameters
 
     properties (SetAccess = private)
         maxIter = 100;    % Maximum number of iterations allowed
-        tol     = 1.e-6;  % Convergence tolerance
+        tol     = 1.e-8;  % Convergence tolerance
         verbose = 2;      % Controlls how much information to dispaly.
                           % 0   : Nothing
                           % 1   : Only optimal information
