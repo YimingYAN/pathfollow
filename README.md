@@ -7,7 +7,7 @@ Author: Yiming Yan @ University of Edinburgh
 
 Before you start
 ---------------------------------------------------------------------------
-This is a simple demo version of the implementation
+This is a demo version of the implementation
 of infeasible primal-dual path-following ipm for Linear Programming.
 There is no guarantee that it can solve very hard or large-scale 
 problems and its performance may not be as good as the standard commercial
