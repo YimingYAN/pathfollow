@@ -11,7 +11,7 @@ classdef pathfollow < handle
 %                    parameters.maxIter   Maximum number of iterations allowed
 %                    parameters.tol       Convergence tolerance
 %                    parameters.verbose   Controlls how much information to dispaly.
-%                                         0 fornothing; 1 for only optimal information 
+%                                         0 for nothing; 1 for only optimal information 
 %                                         2  for every iterations + optimal information
 %                                        >=3 for All information.
 %
