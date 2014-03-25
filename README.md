@@ -9,9 +9,6 @@ Before you start
 ---------------------------------------------------------------------------
 This is a demo version of the implementation
 of infeasible primal-dual path-following ipm for Linear Programming.
-There is no guarantee that it can solve very hard or large-scale 
-problems and its performance may not be as good as the standard commercial
-codes, but it does reflect the general ideas of this class of solvers.
 
 The main solver pathfollow (/src/pathfollow.m) only accepts LP problems 
 in the standard form, namely
