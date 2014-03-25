@@ -1,6 +1,6 @@
 classdef Parameters
         % PARAMETERS Defines parameters for the solver.
-        % Date  : March 22, 2014
+        % Date  : Feb 27, 2014
         % Author: Yiming @ University of Edinburgh
 
     properties (SetAccess = private)

@@ -1,5 +1,23 @@
 classdef pathfollow < handle
-    
+% PATHFOLLOW Object for infeasible primal-dual pathfollow interior point 
+% methods.
+%
+% p = pathfollow(A,b,c)
+% p = pathfollow(A,b,c, parameters), with user defined parameters.
+% 
+% inputs:
+%       A,b,c      - Problem data for min c'x s.t. Ax=b, x>=0
+%       parameters - Struct for user definied parameters. 
+%                    parameters.maxIter   Maximum number of iterations allowed
+%                    parameters.tol       Convergence tolerance
+%                    parameters.verbose   Controlls how much information to dispaly.
+%                                         0 fornothing; 1 for only optimal information 
+%                                         2  for every iterations + optimal information
+%                                        >=3 for All information.
+%
+%
+% March 25, 2014
+% Yiming Yan @ University of Edinburgh
     
     %% Properties
     properties (SetAccess = private)

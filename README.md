@@ -20,12 +20,17 @@ in the standard form, namely
 
 How to use
 --------
+run ```setup``` first to setup the paths.
+
 ```p = pathfollow(A,b,c);```             Create an object.
 
 ```p = pathfollow(A,b,c, parameters);``` Create an object with user defined parameters.
 
 ```p.solve;```                           Solve the problem.
 
+Examples
+----------
+Exmaples can be found in example/examples.m
 
 References
 ---------------------------------------------------------------------------

@@ -3,7 +3,7 @@ classdef LP < handle
     % Contatins data for the following problem
     % minimise c'x subject to Ax = b and x >= 0.
     % 
-    % Date: March 27, 2014
+    % Date: Feb 27, 2014
     % Author: Yiming Yan @ University of Edinburgh
     
     %% Problem data
