@@ -20,7 +20,7 @@ in the standard form, namely
 
 How to use
 --------
-run ```setup``` first to setup the paths.
+run ```setup``` first to add necessary paths.
 
 ```p = pathfollow(A,b,c);```             Create an object.
 
